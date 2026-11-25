@@ -13,7 +13,7 @@ npm run db:seed        # creates admin login + 3 sample products
 npm run dev            # http://localhost:4000
 ```
 
-Seeded admin login: `admin@lmbshoes.com` / `admin123`.
+`db:seed` creates a starter admin account for local development. Log in once and change that password immediately; never keep the starter password on a deployed server.
 
 Cloudinary keys are blank in `.env` — image upload (`/api/admin/products/upload-image`)
 will fail until you add `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`
